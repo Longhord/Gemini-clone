@@ -73,8 +73,9 @@
 }
 
 .main-bottom{
-    position: absolute;
+    position: flex;
     bottom: 0;
+    margin-top: 70px;
     width: 100%;
 }
 
@@ -260,6 +261,11 @@
     }
     .chat-bubble.ai .loader {
         min-width: 150px;
+        max-width: 100%;
+    }
+
+    .chat-bubble.ai .loader {
+        min-width: 120px;
         max-width: 100%;
     }
 }
