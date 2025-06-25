@@ -1,0 +1,129 @@
+.sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e1e1e1;
+    padding: 25px 15px;
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+.sidebar .menu{
+    display: block;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.sidebar .new-chat{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #8c8c8c;
+    cursor: pointer;
+    
+}
+
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s;
+}
+
+.sidebar .recent-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.sidebar .recent-entry{
+    display: flex;
+    align-items:  center;
+    gap:  10px;
+    padding:  10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+}
+
+.sidebar .recent-entry:hover{
+    background-color: #ffffff;
+}
+
+.sidebar .bottom{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar .bottom-item{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .sidebar {
+    min-width: 60px;
+    max-width: 80px;
+    padding: 10px 2px;
+    border-radius: 12px 0 0 12px;
+    align-items: center;
+  }
+  .sidebar .new-chat {
+    font-size: 12px;
+    padding: 7px 8px;
+    margin-top: 30px;
+    justify-content: center;
+    width: 90%;
+    min-width: 0;
+  }
+  .sidebar .recent {
+    gap: 4px;
+    margin-top: 12px;
+    align-items: center;
+  }
+  .sidebar .recent-title {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    text-align: center;
+    font-size: 11px;
+  }
+  .sidebar .recent-entry {
+    padding: 6px 8px;
+    font-size: 12px;
+    gap: 5px;
+    width: 90%;
+    min-width: 0;
+    justify-content: center;
+  }
+  .sidebar .bottom {
+    gap: 4px;
+    align-items: center;
+  }
+  .sidebar .bottom-item {
+    padding-right: 0;
+    width: 90%;
+    min-width: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width:600px) {
+  .sidebar{
+    display: none;
+  }
+  
+}
+
+
+        
